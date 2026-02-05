@@ -41,22 +41,25 @@ This repository contains the **Frontend** of the Foodify application.
 
 ## 📂 Project Structure
 
-frontend/
-│
-├── index.html → Landing page
-├── menu.html → Customer menu page
-├── admin.html → Admin dashboard
-│
-├── script.js → Login & authentication logic
-├── menu.js → Menu & order functionality
-├── admin.js → Admin management logic
-│
-├── style.css → Main styling
-├── menu.css → Menu styling
-├── admin.css → Admin styling
-│
-├── img/ → Images & assets
-└── menudata.json → Static menu data (backup)
+### HTML Pages
+- **index.html** – Landing page  
+- **menu.html** – Customer menu page  
+- **admin.html** – Admin dashboard  
+
+### JavaScript Files
+- **script.js** – Login & authentication logic  
+- **menu.js** – Menu & order functionality  
+- **admin.js** – Admin management logic  
+
+### Styling
+- **style.css** – Main styling  
+- **menu.css** – Menu styling  
+- **admin.css** – Admin styling  
+
+### Assets
+- **img/** – Images & assets  
+- **menudata.json** – Static menu backup
+
 
 
 ---
