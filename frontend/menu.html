@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Menu | Foodify</title>
+
+  <link rel="stylesheet" href="menu.css" />
+  <script src="menu.js" defer></script>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header class="navbar">
+  <div class="logo">🍕 Foodify</div>
+
+  <!-- SEARCH IN NAVBAR -->
+  <div class="nav-search">
+    <input
+      type="text"
+      id="searchInput"
+      placeholder="Search for food..."
+      oninput="searchMenu()"
+    />
+  </div>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="menu.html" class="active">Menu</a>
+  </nav>
+</header>
+
+
+<!-- HERO CARD -->
+<section class="hero-wrapper">
+  <div class="hero-card">
+    <div class="hero-card-overlay">
+      <div class="hero-card-content">
+        <h1>Explore Our Menu</h1>
+        <p>Freshly prepared, just for you</p>
+
+        <div class="filters hero-filters">
+          <button class="active" onclick="applyFilter('all')">All</button>
+          <button onclick="applyFilter('veg')">Veg</button>
+          <button onclick="applyFilter('non-veg')">Non-Veg</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- MENU CONTENT -->
+<section class="menu-page">
+
+  <h2>🍟 Appetizers</h2>
+  <div class="menu-grid" id="appetizers"></div>
+
+  <h2>🍛 Main Courses</h2>
+  <div class="menu-grid" id="main_courses"></div>
+
+  <h2>🍰 Desserts</h2>
+  <div class="menu-grid" id="desserts"></div>
+
+</section>
+
+<!-- CART -->
+<div class="cart">
+  <h3>🛒 Your Cart</h3>
+  <div id="cart-items"></div>
+
+  <div class="cart-footer">
+    <p>Total: ₹<span id="cart-total">0</span></p>
+    <button onclick="checkout()">Checkout</button>
+  </div>
+</div>
+
+<!-- ADDRESS MODAL -->
+<div class="modal" id="addressModal">
+  <div class="modal-content">
+    <span class="close" onclick="closeAddressModal()">×</span>
+    <h2>Delivery Address</h2>
+    <input id="addrName" placeholder="Full Name">
+    <input id="addrPhone" placeholder="Phone Number">
+    <textarea id="addrText" placeholder="Full Address"></textarea>
+    <button onclick="saveAddress()">Continue</button>
+  </div>
+</div>
+
+<!-- PAYMENT MODAL -->
+<div class="modal" id="paymentModal">
+  <div class="modal-content">
+    <span class="close" onclick="closePaymentModal()">×</span>
+
+    <h2>Payment</h2>
+
+    <div class="payment-option" onclick="selectPayment('cod')">
+      <input type="radio" id="cod" hidden checked>
+      💵 Cash on Delivery
+    </div>
+
+    <div class="payment-option" onclick="selectPayment('upi')">
+      <input type="radio" id="upi" hidden>
+      📱 UPI
+    </div>
+
+    <input id="upiId" placeholder="UPI ID" style="display:none">
+    <button onclick="placeOrder()">Place Order</button>
+  </div>
+</div>
+
+<!-- SUCCESS MODAL -->
+<div class="modal" id="successModal">
+  <div class="modal-content success-box">
+    <div class="success-circle">
+      <svg viewBox="0 0 60 60">
+        <circle class="circle" cx="30" cy="30" r="26" fill="none"/>
+        <path class="check" d="M18 31l7 7 17-17" fill="none"/>
+      </svg>
+    </div>
+    <h2>Order Placed!</h2>
+    <p>Your food is being prepared 🍕</p>
+    <button onclick="closeSuccess()">Back to Menu</button>
+  </div>
+</div>
+
+<footer class="big-footer">
+  © 2026 Foodify. All rights reserved.
+</footer>
+
+</body>
+</html>

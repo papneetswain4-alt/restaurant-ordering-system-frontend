@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Order food With Us</title>
+
+        <link rel="stylesheet" href="style.css">
+        <script src="https://accounts.google.com/gsi/client" async defer></script>
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <header class="navbar">
+            <div class="logo">
+                <span class="logo-icon">🍕</span>
+                <span class="logo-text">Foodify</span>
+            </div>
+
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="menu.html">Menu</a>
+                <a href="#about">About</a>
+            </nav>
+        </header>
+
+        <section class="hero">
+        <div class="overlay"></div>
+
+        <div class="content">
+            <h1>Discover the best food With Us</h1>
+            <p>Order from your favourite restaurant in seconds</p>
+            <div class="login-buttons" id="loginButtons">
+                <button class="btn customer" onclick="openCustomerLogin()">
+                    Login as Customer
+                </button>
+
+                <button class="btn admin" onclick="openAdminLogin()">
+                    Login as Admin
+                </button>
+            </div>
+
+
+        </div>
+        </section>
+        <div class="modal" id="customerLoginModal">
+            <div class="modal-content login-modal">
+                <span class="close" onclick="closeCustomerLogin()">×</span>
+
+                <h2>Login as Customer</h2>
+                <p class="login-subtitle">
+                Continue with Google to explore delicious food 🍕
+                </p>
+
+                <div class="google-login">
+                    <div id="g_id_onload"
+                        data-client_id="714628095196-fl5inm5m0se4u4dcu1jte4j6p1csc65a.apps.googleusercontent.com"
+                        data-callback="handleCredentialResponse">
+                    </div>
+
+                    <div class="g_id_signin"
+                        data-type="standard"
+                        data-size="large"
+                        data-theme="outline"
+                        data-shape="pill">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal" id="adminLoginModal">
+            <div class="modal-content login-modal">
+                <span class="close" onclick="closeAdminLogin()">×</span>
+
+                <h2>Admin Login</h2>
+                <p class="login-subtitle">
+                Authorized access only 🔐
+                </p>
+
+                <input id="adminEmail" type="email" placeholder="Admin Email" />
+                <input id="adminPassword" type="password" placeholder="Password" />
+
+                <button class="login-btn" onclick="adminLogin()">Login</button>
+            </div>
+        </div>
+
+
+        <section class="about" id="about">
+            <div class="about-container">
+
+                <h2>Our Story</h2>
+
+                <p class="about-intro">
+                    From a small kitchen dream to delivering happiness at your doorstep.
+                </p>
+
+                <!-- STORY BLOCK -->
+                <div class="about-story">
+                    <p>
+                        We started our journey with a simple belief — food should be fresh,
+                        affordable, and easy to order. What began as a small local setup
+                        quickly turned into a platform loved by food enthusiasts across the city.
+                    </p>
+                    <p>
+                        Every meal we serve carries the same passion we started with: quality,
+                        speed, and care. We work closely with our kitchens to ensure every order
+                        meets our standards before it reaches you.
+                    </p>
+                </div>
+
+                <!-- INFO GRID -->
+                <div class="about-grid">
+                    <div class="about-card">
+                        <h3>How We Started</h3>
+                        <p>
+                            A few orders a day, a lot of feedback, and a big vision. We learned,
+                            improved, and grew with our customers.
+                        </p>
+                    </div>
+
+                    <div class="about-card">
+                        <h3>Where We Are Now</h3>
+                        <p>
+                            Serving hundreds daily, expanding menus, and building a trusted food
+                            delivery experience.
+                        </p>
+                    </div>
+
+                    <div class="about-card">
+                        <h3>How We Serve You</h3>
+                        <p>
+                            From kitchen preparation to doorstep delivery, we ensure safety,
+                            hygiene, and speed at every step.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <footer class="big-footer">
+            <div class="footer-container">
+
+                <!-- TOP BRAND SECTION -->
+                <div class="footer-brand">
+                <h2>🍕 Foodify</h2>
+                <p>
+                    From a small kitchen to delivering happiness across the city.
+                    We make ordering food simple, fast, and reliable.
+                </p>
+                </div>
+
+                <!-- FOOTER GRID -->
+                <div class="footer-grid">
+
+                <div class="footer-column">
+                    <h3>Company</h3>
+                    <a href="#">About Us</a>
+                    <a href="#">Our Story</a>
+                    <a href="#">Careers</a>
+                    <a href="#">Partner With Us</a>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Explore</h3>
+                    <a href="#">Menu</a>
+                    <a href="#">Popular Dishes</a>
+                    <a href="#">Offers</a>
+                    <a href="#">New Restaurants</a>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Support</h3>
+                    <a href="#">Help Center</a>
+                    <a href="#">Contact Us</a>
+                    <a href="#">Delivery Issues</a>
+                    <a href="#">Report a Problem</a>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Legal</h3>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms & Conditions</a>
+                    <a href="#">Cookie Policy</a>
+                </div>
+
+                </div>
+
+                <!-- BOTTOM SECTION -->
+                <div class="footer-bottom">
+                <p>© 2026 Foodify. All rights reserved.</p>
+                <p>Delivering fresh food with care ❤️</p>
+                </div>
+
+            </div>
+        </footer>
+
+    </body>
+
+</html>

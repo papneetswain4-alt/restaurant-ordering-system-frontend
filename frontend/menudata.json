@@ -1,0 +1,253 @@
+{
+  "restaurant_name": "The Gourmet Spot",
+  "menu": {
+    "appetizers": [
+      {
+        "id": "A01",
+        "name": "Crispy Calamari",
+        "description": "Lightly battered calamari rings with lemon aioli",
+        "price": 12.5,
+        "category": "Seafood",
+        "tags": ["non-veg"]
+      },
+      {
+        "id": "A02",
+        "name": "Caprese Salad",
+        "description": "Fresh mozzarella, tomatoes, and basil with balsamic glaze",
+        "price": 10.0,
+        "category": "Salad",
+        "tags": ["veg", "gluten-free"]
+      },
+      {
+        "id": "A03",
+        "name": "Garlic Bread",
+        "description": "Toasted bread with garlic butter",
+        "price": 6.0,
+        "category": "Bakery",
+        "tags": ["veg"]
+      },
+      {
+        "id": "A04",
+        "name": "Chicken Wings",
+        "description": "Spicy grilled chicken wings",
+        "price": 11.0,
+        "category": "Meat",
+        "tags": ["non-veg", "spicy"]
+      },
+      {
+        "id": "A05",
+        "name": "Spring Rolls",
+        "description": "Crispy vegetable spring rolls",
+        "price": 7.5,
+        "category": "Snack",
+        "tags": ["veg"]
+      },
+      {
+        "id": "A06",
+        "name": "Paneer Tikka",
+        "description": "Grilled cottage cheese with spices",
+        "price": 9.0,
+        "category": "Indian",
+        "tags": ["veg"]
+      },
+      {
+        "id": "A07",
+        "name": "Nachos",
+        "description": "Corn chips with cheese and salsa",
+        "price": 8.0,
+        "category": "Mexican",
+        "tags": ["veg"]
+      },
+      {
+        "id": "A08",
+        "name": "Fish Fingers",
+        "description": "Breaded fish sticks with tartar sauce",
+        "price": 10.5,
+        "category": "Seafood",
+        "tags": ["non-veg"]
+      },
+      {
+        "id": "A09",
+        "name": "Stuffed Mushrooms",
+        "description": "Mushrooms stuffed with cheese",
+        "price": 8.5,
+        "category": "Vegetarian",
+        "tags": ["veg"]
+      },
+      {
+        "id": "A10",
+        "name": "French Fries",
+        "description": "Crispy salted potato fries",
+        "price": 5.5,
+        "category": "Fast Food",
+        "tags": ["veg"]
+      }
+    ],
+
+    "main_courses": [
+      {
+        "id": "M01",
+        "name": "Grilled Salmon",
+        "description": "Atlantic salmon with asparagus and quinoa",
+        "price": 24.0,
+        "category": "Seafood",
+        "tags": ["non-veg", "healthy"]
+      },
+      {
+        "id": "M02",
+        "name": "Truffle Mushroom Risotto",
+        "description": "Arborio rice with wild mushrooms and truffle oil",
+        "price": 19.5,
+        "category": "Vegetarian",
+        "tags": ["veg"]
+      },
+      {
+        "id": "M03",
+        "name": "Butter Chicken",
+        "description": "Creamy tomato-based chicken curry",
+        "price": 18.0,
+        "category": "Indian",
+        "tags": ["non-veg"]
+      },
+      {
+        "id": "M04",
+        "name": "Veg Biryani",
+        "description": "Spiced rice with vegetables",
+        "price": 14.0,
+        "category": "Indian",
+        "tags": ["veg"]
+      },
+      {
+        "id": "M05",
+        "name": "Beef Steak",
+        "description": "Grilled beef steak with mashed potatoes",
+        "price": 26.0,
+        "category": "Meat",
+        "tags": ["non-veg"]
+      },
+      {
+        "id": "M06",
+        "name": "Chicken Alfredo Pasta",
+        "description": "Creamy Alfredo sauce with pasta",
+        "price": 16.0,
+        "category": "Italian",
+        "tags": ["non-veg"]
+      },
+      {
+        "id": "M07",
+        "name": "Chicken Burger",
+        "description": "Grilled chicken patty with lettuce",
+        "price": 13.0,
+        "category": "Fast Food",
+        "tags": ["non-veg"]
+      },
+      {
+        "id": "M08",
+        "name": "Veggie Pizza",
+        "description": "Pizza topped with fresh vegetables",
+        "price": 15.5,
+        "category": "Italian",
+        "tags": ["veg"]
+      },
+      {
+        "id": "M09",
+        "name": "Fish Curry",
+        "description": "Spicy fish curry with rice",
+        "price": 17.0,
+        "category": "Seafood",
+        "tags": ["non-veg"]
+      },
+      {
+        "id": "M10",
+        "name": "Tofu Stir Fry",
+        "description": "Stir-fried tofu with vegetables",
+        "price": 14.5,
+        "category": "Asian",
+        "tags": ["veg", "healthy"]
+      }
+    ],
+
+    "desserts": [
+      {
+        "id": "D01",
+        "name": "Chocolate Lava Cake",
+        "description": "Molten chocolate cake with vanilla ice cream",
+        "price": 8.5,
+        "category": "Dessert",
+        "tags": ["sweet"]
+      },
+      {
+        "id": "D02",
+        "name": "Cheesecake",
+        "description": "Creamy classic cheesecake",
+        "price": 7.5,
+        "category": "Dessert",
+        "tags": ["sweet"]
+      },
+      {
+        "id": "D03",
+        "name": "Brownie",
+        "description": "Chocolate brownie with nuts",
+        "price": 6.0,
+        "category": "Dessert",
+        "tags": ["sweet"]
+      },
+      {
+        "id": "D04",
+        "name": "Ice Cream Sundae",
+        "description": "Vanilla ice cream with toppings",
+        "price": 5.5,
+        "category": "Dessert",
+        "tags": ["sweet"]
+      },
+      {
+        "id": "D05",
+        "name": "Fruit Salad",
+        "description": "Fresh seasonal fruits",
+        "price": 5.0,
+        "category": "Dessert",
+        "tags": ["healthy"]
+      },
+      {
+        "id": "D06",
+        "name": "Gulab Jamun",
+        "description": "Traditional Indian sweet",
+        "price": 4.5,
+        "category": "Indian Dessert",
+        "tags": ["sweet"]
+      },
+      {
+        "id": "D07",
+        "name": "Tiramisu",
+        "description": "Coffee-flavored Italian dessert",
+        "price": 7.0,
+        "category": "Italian Dessert",
+        "tags": ["sweet"]
+      },
+      {
+        "id": "D08",
+        "name": "Pancakes",
+        "description": "Fluffy pancakes with syrup",
+        "price": 6.5,
+        "category": "Dessert",
+        "tags": ["sweet"]
+      },
+      {
+        "id": "D09",
+        "name": "Apple Pie",
+        "description": "Classic apple pie with cinnamon",
+        "price": 6.0,
+        "category": "Dessert",
+        "tags": ["sweet"]
+      },
+      {
+        "id": "D10",
+        "name": "Mousse",
+        "description": "Light chocolate mousse",
+        "price": 6.5,
+        "category": "Dessert",
+        "tags": ["sweet"]
+      }
+    ]
+  }
+}

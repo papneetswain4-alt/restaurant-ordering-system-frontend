@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Admin Dashboard | Foodify</title>
+  <link rel="stylesheet" href="admin.css" />
+  <script src="admin.js" defer></script>
+</head>
+
+<body>
+
+<!-- SIDEBAR -->
+<aside class="sidebar">
+  <h2>🍕 Foodify</h2>
+
+  <nav>
+    <a onclick="showDashboard()">Dashboard</a>
+    <a onclick="showOrders()">Orders</a>
+    <a onclick="showCustomers()">Customers</a>
+    <a onclick="showMenu()">Menu</a>
+    <a onclick="openLogoutModal()">Logout</a>
+  </nav>
+
+</aside>
+
+<!-- MAIN -->
+<main class="main">
+  <!-- HEADER -->
+  <header class="topbar">
+    <h1 id="pageTitle">Admin Dashboard</h1>
+    <span class="admin-name">Welcome, Admin</span>
+  </header>
+
+  <!-- CONTENT AREA -->
+  <div id="contentArea">
+    <!-- Dashboard stats + table will load here dynamically -->
+  </div>
+</main>
+<!-- CUSTOMER DETAILS MODAL -->
+<div class="modal" id="customerModal">
+  <div class="modal-content large">
+    <span class="close" onclick="closeCustomerModal()">×</span>
+
+    <h2 id="customerTitle">Customer Orders</h2>
+
+    <div id="customerOrders"></div>
+  </div>
+</div>
+<!-- ORDER DETAILS MODAL -->
+<div class="modal" id="orderDetailsModal">
+  <div class="modal-content order-modal">
+
+    <span class="close" onclick="closeOrderModal()">×</span>
+
+    <h2 id="orderModalTitle">Order Details</h2>
+
+    <div id="orderDetailsContent">
+      Loading...
+    </div>
+
+  </div>
+</div>
+<div class="modal" id="menuModal">
+  <div class="modal-content">
+
+    <input id="menuName" placeholder="Name">
+    <input id="menuPrice" placeholder="Price">
+    <input id="menuCategory" placeholder="Category">
+    <textarea id="menuDesc" placeholder="Description"></textarea>
+
+    <button onclick="saveMenu()">Save</button>
+  </div>
+</div>
+<!-- LOGOUT CONFIRM MODAL -->
+<div class="modal" id="logoutModal">
+  <div class="modal-content small">
+
+    <h2>Logout?</h2>
+    <p>Are you sure you want to logout?</p>
+
+    <div class="modal-actions">
+      <button class="logout-btn" onclick="confirmLogout()">Logout</button>
+      <button class="cancel-btn" onclick="closeLogoutModal()">Cancel</button>
+    </div>
+
+  </div>
+</div>
+
+
+</body>
+</html>
