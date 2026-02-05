@@ -7,7 +7,7 @@ This repository contains the **Frontend** of the Foodify application.
 ---
 
 ## 🚀 Live Website
-👉 https://foodify-ordering.netlify.app
+👉 https://foodily-orders.netlify.app
 
 ---
 
@@ -82,7 +82,3 @@ This frontend connects with Foodify backend API:
 
 ---
 
-## ⚙️ Setup Instructions (Local Development)
-
-### 1️⃣ Clone Repository
-👉 https://foodily-orders.netlify.app
