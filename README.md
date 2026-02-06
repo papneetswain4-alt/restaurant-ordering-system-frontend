@@ -86,6 +86,12 @@ This frontend connects with Foodify backend API:
 
 👉 https://restaurant-ordering-system-lfub.onrender.com
 
+### API Responsibilities:
+- Fetch menu items
+- Store and retrieve orders
+- Admin management operations
+- Database integration
+
 ---
 
 ## 📈 Future Improvements
