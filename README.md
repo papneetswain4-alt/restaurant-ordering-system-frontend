@@ -30,12 +30,18 @@ This repository contains the **Frontend** of the Foodify application.
 
 ## 🛠 Tech Stack
 
-- HTML5
-- CSS3
-- JavaScript (Vanilla JS)
-- Google OAuth Authentication
-- Local Storage for session handling
-- Netlify Hosting
+<p>
+  <img src="https://skillicons.dev/icons?i=html" width="40"/> HTML5 <br><br>
+  <img src="https://skillicons.dev/icons?i=css" width="40"/> CSS3 <br><br>
+  <img src="https://skillicons.dev/icons?i=js" width="40"/> JavaScript (Vanilla JS) <br><br>
+  <img src="https://skillicons.dev/icons?i=netlify" width="40"/> Netlify Hosting <br><br>
+</p>
+
+<p>
+  <img src="https://img.shields.io/badge/Google%20OAuth-4285F4?style=flat-square&logo=google&logoColor=white"/>
+  <img src="https://img.shields.io/badge/LocalStorage-FF9800?style=flat-square"/>
+</p>
+
 
 ---
 
@@ -82,3 +88,23 @@ This frontend connects with Foodify backend API:
 
 ---
 
+## 📈 Future Improvements
+
+- Payment gateway integration
+- Order history for users
+- Real-time order tracking
+- Admin analytics dashboard
+- UI animations & micro-interactions
+
+---
+
+## 👨‍💻 Author
+
+**Papneet**  
+Frontend Developer in Progress 🚀  
+
+---
+
+## 📜 License
+
+This project is for educational and portfolio purposes.
